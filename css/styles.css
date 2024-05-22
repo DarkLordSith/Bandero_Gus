@@ -295,8 +295,15 @@ body {
 
 @media screen and (max-width: 785px) {
     .wrapper{
-    flex-direction: column;
-    align-items: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-page-logo{
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
     }
 
     .main-page-left-side{
