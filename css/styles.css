@@ -144,7 +144,11 @@ body {
 }
 
 .facts-item{
-    width: calc((100% / 3) - (24px * 2) / 3);
+    width: 30%;
+}
+
+.facts-item-img{
+    width: 100%;
 }
 
 .form-conteiner {
@@ -259,4 +263,97 @@ body {
     width: 100%;
     z-index: 2;
     pointer-events: none;
+}
+
+@media screen and (max-width: 1170px) {
+    .wrapper{
+        width: 100%;
+    }
+
+    .main-page-left-side{
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .main-page-text-container{
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .main-page-title{
+        font-size: 44px;
+    }
+
+    .main-page-hello-text{
+        margin-bottom: 10px;
+    }
+
+    .gus-img{
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .wrapper{
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .main-page-left-side{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-page-text-container{
+        text-align: center;
+    }
+
+    .facts-descr{
+        width: 100%;
+    }
+
+    .facts{
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .facts-item{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .form-conteiner{
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .form-input{
+        width: 90%;
+    }
+
+    .gus-img{
+        width: 100%;
+    }
+
+    .facts-item{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .facts-title{
+        font-size: 24px;
+        line-height: 30px;
+    }
 }
